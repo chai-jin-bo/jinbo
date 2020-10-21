@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>多啦爱梦</title>
+		<style type="text/css">
+			#to {
+				width: 390px;
+				height: 390px;
+				background-color: #3a99d8;
+				border-radius: 50%;
+				position: relative;
+				border: 4px solid black;
+				margin: 0 auto;
+				animation: al 2s infinite linear;
+			}
+			@keyframes al{
+				20%{
+					transform: translateX(100px);
+				}
+				40%{
+					transform: translateX(200px);
+				}
+				60%{
+					transform: translateX(300px);
+				}
+				80%{
+					transform: translateX(400px);
+				}
+				100%{
+					transform: translateX(500px);
+				}
+			}
+            #che{
+				animation: alw 2s infinite linear;
+			}
+			@keyframes alw{
+				20%{
+					transform: rotateX(360deg);
+					transform: translateX(100px);
+				}
+				40%{
+					transform: translateX(200px);
+				}
+				60%{
+					transform: translateX(300px);
+				}
+				80%{
+					transform: translateX(400px);
+				}
+				100%{
+					transform: translateX(500px);
+				}
+			}
+			#zuoyan {
+				width: 80px;
+				height: 80px;
+				background-color: white;
+				border: 4px solid black;
+				border-radius: 50%;
+				position: absolute;
+				top: 70px;
+				left: 110px;
+				position: relative;
+				z-index: 1;
+			}
+
+			#yzz {
+				width: 30px;
+				height: 30px;
+				background-color: #000000;
+				border-radius: 50%;
+				position: absolute;
+				top: 40px;
+				left: 30px;
+				z-index: 1;
+			}
+
+			#zzz {
+				width: 30px;
+				height: 30px;
+				background-color: #000000;
+				border-radius: 50%;
+				position: absolute;
+				top: 40px;
+				left: 20px;
+
+			}
+
+			#youyan {
+				width: 80px;
+				height: 80px;
+				border: 4px solid black;
+				border-radius: 50%;
+				position: absolute;
+				top: 70px;
+				left: 197px;
+				background-color: white;
+				z-index: 1;
+			}
+
+			#bz {
+				width: 30px;
+				height: 30px;
+				background-color: #a32b2e;
+				border-radius: 50%;
+				border: 4px solid black;
+				position: absolute;
+				z-index: 1;
+				top: 135px;
+				left: 180px;
+			}
+
+			#bz1 {
+				width: 4px;
+				height: 160px;
+				background-color: #000000;
+				position: absolute;
+				top: 30px;
+				left: 11px;
+				z-index: 1;
+			}
+
+			#lian {
+				width: 280px;
+				height: 280px;
+				border: 4px solid #000000;
+				border-radius: 50%;
+				position: absolute;
+				top: 100px;
+				left: 52px;
+				background-color: white;
+			}
+
+			#lian div:nth-child(1) {
+				width: 80px;
+				height: 4px;
+				background-color: #000000;
+				position: absolute;
+				top: 125px;
+				left: 33px;
+			}
+
+			#lian div:nth-child(2) {
+				width: 80px;
+				height: 3px;
+				background-color: #000000;
+				position: absolute;
+				top: 90px;
+				left: 33px;
+				transform: rotateZ(25deg);
+			}
+
+			#lian div:nth-child(3) {
+				width: 80px;
+				height: 3px;
+				background-color: #000000;
+				position: absolute;
+				top: 160px;
+				left: 33px;
+				transform: rotateZ(335deg);
+			}
+
+			#lian div:nth-child(4) {
+				width: 80px;
+				height: 3px;
+				background-color: #000000;
+				position: absolute;
+				top: 90px;
+				left: 170px;
+				transform: rotateZ(335deg);
+			}
+
+			#lian div:nth-child(5) {
+				width: 80px;
+				height: 4px;
+				background-color: #000000;
+				position: absolute;
+				top: 125px;
+				left: 170px;
+			}
+
+			#lian div:nth-child(6) {
+				width: 80px;
+				height: 3px;
+				background-color: #000000;
+				position: absolute;
+				top: 160px;
+				left: 170px;
+				transform: rotateZ(25deg);
+			}
+
+			#zui {
+				width: 170px;
+				height: 170px;
+				border: 4px solid black;
+				border-radius: 45%;
+				position: absolute;
+				bottom: 70%;
+			}
+
+			#zui1 {
+				width: 179px;
+				height: 170px;
+				position: relative;
+				top: 195px;
+				left: 110px;
+				overflow: hidden;
+				/* border: 2px solid red; */
+				/* border-bottom: 4px solid red;
+				border-bottom-left-radius:25% ;
+				border-bottom-right-radius:25% ; */
+			}
+
+			#weibo {
+				width: 190px;
+				height: 23px;
+				background-color: #a32b2e;
+				position: absolute;
+				top: 363px;
+				left: 100px;
+				border: 4px solid black;
+				border-radius: 50px/50px;
+				z-index: 1;
+			}
+
+			#lingdang {
+				position: relative;
+
+			}
+
+			#wan1 {
+				width: 60px;
+				height: 60px;
+				background-color: #fffd38;
+				border-radius: 50%;
+				position: absolute;
+				top: 15px;
+				left: 63px;
+				border: 4px solid black;
+			}
+
+			#wan1 div:nth-child(1) {
+				width: 55px;
+				height: 3px;
+				background-color: black;
+				position: absolute;
+				top: 12px;
+				left: 1px;
+			}
+
+			#wan1 div:nth-child(2) {
+				width: 59px;
+				height: 3px;
+				background-color: black;
+				position: absolute;
+				top: 19px;
+				left: px;
+			}
+
+			#wan1 div:nth-child(3) {
+				width: 25px;
+				height: 25px;
+				background-color: black;
+				border-radius: 50%;
+				position: absolute;
+				top: 26px;
+				left: 19px;
+			}
+
+			#wan1 div:nth-child(4) {
+				width: 4px;
+				height: 20px;
+				background-color: black;
+				/* border-radius: 50%; */
+				position: absolute;
+				top: 40px;
+				left: 29px;
+			}
+
+			#dudou {
+				width: 217px;
+				height: 300px;
+				/* border: 4px solid black; */
+				/* border-radius: 50%/50%; */
+				position: absolute;
+				top: 365px;
+				left: 90px;
+				overflow: hidden;
+			}
+
+			#duzi {
+				width: 205px;
+				height: 205px;
+				border: 3px solid black;
+				border-radius: 50%/50%;
+				position: absolute;
+				top: -20%;
+				left: 2%;
+				background-color: #ffffff;
+			}
+
+			#budou {
+				width: 110px;
+				height: 110px;
+				border-top: 4px solid #000000;
+				margin-top: 145px;
+				margin-left: 50px;
+				overflow: hidden;
+
+			}
+
+			#budou div {
+				width: 102px;
+				height: 102px;
+				border: 4px solid #000000;
+				border-radius: 50%;
+				margin-top: -50%;
+				margin-left: px;
+				background-color: #ffffff;
+			}
+
+			#yifu {
+				width: 210px;
+				height: 260px;
+				background-color: #3a99d8;
+				margin-left: 3px;
+				border-top-left-radius: 65px;
+				border-top-right-radius: 105px;
+			}
+			#gebo{
+				width: 160px;
+				height: 100px;
+				border-top: 3px solid black;
+				background-color:#3a99d8;
+                position: relative;
+				top: 160px;
+				left: 260px;
+				transform: rotateZ(30deg);
+				z-index: -1;
+			}
+			#gebo1{
+				width: 105px;
+				height: 4px;
+				/* border-top: 2px solid red; */
+				background-color: #000000;
+			    position: relative;
+				top: 170px;
+				left: 295px;
+				transform: rotateZ(30deg);
+			}
+			#shou{
+				width: 120px;
+				height: 120px;
+				border: 1px solid gray;
+				border-radius: 50%;
+				position: relative;
+				top: 90px;
+				left: 350px;
+				background-color: white;
+			}
+			#tui{
+				width: 4px;
+				height: 120px;
+				background-color:black;
+				position: absolute;
+				left: 302px;
+				top: 505px;
+			}
+			#zuogebo{
+				width: 180px;
+				height: 100px;
+				border-top: 3px solid black;
+				background-color:#3a99d8;
+				position: absolute;
+				top: 410px;
+				/* left: 260px; */
+				transform: rotate(330deg);
+				z-index: -1;
+			}
+			#zuoshou{
+				width: 120px;
+				height: 120px;
+				border: 1px solid gray;
+				border-radius: 50%;
+				position: relative;
+				top: -30px;
+				left: -70px;
+				background-color: white;
+			}
+			#zuo1{
+				width: 120px;
+				height: 4px;
+				background-color: #000000;
+				position: absolute;
+				top: 528px;
+				left: 10px;
+				transform: rotateZ(150deg);
+				z-index: -1;
+			}
+			#zuotui{
+				width: 4px;
+				height: 110px;
+				background-color:black;
+				position: absolute;
+				left: 92px;
+				top: 514px;
+			}
+			#dang{
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				position: absolute;
+				top: 605px;
+				left: 150px;
+				background-color: white;
+				overflow: hidden;
+				border: 3px solid white;
+				border-top: 3px solid black;
+			}
+		    #zuojiao{
+				background-color: white;
+				width: 120px;
+				height: 50px;
+				border: 3px solid #000000;
+				position: absolute;
+				top: 619px;
+				left: 59px;
+				border-radius: 20%/50%;
+			}
+			#youjiao{
+				background-color: white;
+				width: 120px;
+				height: 50px;
+				border: 3px solid #000000;
+				position: absolute;
+				top: 619px;
+				left: 218px;
+				border-radius: 20%/50%;
+			}
+			#jiaojiao{
+				width: 100px;
+				height: 100px;
+				margin-top: 50px;
+				margin-left: 100px;
+				border: 1px solid yellow;
+				border-radius: 50%;
+				box-shadow: inset 0 0 90px 20px red,
+					0 0 30px 20px red;
+					position: absolute;
+					left: 550px;
+					top: 280px;
+					animation: ala 1s infinite linear;
+			}
+			@keyframes ala{
+				20%{transform: rotate(60deg);}
+				40%{
+					transform: rotate(120deg);
+				}
+				60%{
+					transform: rotate(180deg);
+				}
+				80%{
+					transform: rotate(240deg);
+				}
+				100%{
+					transform: rotate(360deg);
+				}
+			}
+			#youjiaojiao{
+			width: 100px;
+			height: 100px;
+			margin-top: 50px;
+			margin-left: 100px;
+			border: 1px solid yellow;
+			border-radius: 50%;
+			box-shadow: inset 0 0 90px 20px red,
+				0 0 30px 20px red;
+				position: absolute;
+				left: 750px;
+				top: 280px;
+				animation: alo 1s infinite linear;
+			}
+			@keyframes alo{
+				20%{transform: rotate(60deg);}
+				40%{
+					transform: rotate(120deg);
+				}
+				60%{
+					transform: rotate(180deg);
+				}
+				80%{
+					transform: rotate(240deg);
+				}
+				100%{
+					transform: rotate(360deg);
+				}
+			}
+			#che{
+				color: white;
+				font-size: 30px;
+				text-align: center;
+				line-height: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="to">
+			<div id="zuoyan">
+				<div id="yzz"></div>
+			</div>
+			<div id="youyan">
+				<div id="zzz"></div>
+			</div>
+			<div id="bz">
+				<div id="bz1"></div>
+			</div>
+			<div id="lian">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div id="zui1">
+				<div id="zui"></div>
+			</div>
+			<div id="weibo">
+				<div id="lingdang">
+					<div id="wan1">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+
+				</div>
+			</div>
+			<div id="dudou">
+				<div id="duzi">
+					<div id="budou">
+						<div></div>
+					</div>
+				</div>
+				<div id="yifu">
+				</div>
+				
+			</div>
+				<div id="gebo"></div>
+				<div id="gebo1"></div>
+				<div id="shou"></div>
+				<div id="tui"></div>
+				<div id="zuogebo"></div>
+				<div id="zuoshou"></div>
+				<div id="zuo1"></div>
+				<div id="zuotui"></div>
+				<div id="dang">
+					<div></div>
+				</div>
+				<div id="zuojiao"></div>
+				<div id="youjiao"></div>
+		</div>
+		<div id="che">
+		<div id="jiaojiao">赵</div>
+		<div id="youjiaojiao">杰</div>
+		</div>
+	</body>
+</html>
